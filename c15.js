@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')();
-let lettre = prompt("Entrez une lettre :").toLowerCase();
+let lettre = prompt("Entrez une lettre :").
 
 switch (lettre) {
     case 'a':
