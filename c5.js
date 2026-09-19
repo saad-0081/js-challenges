@@ -1,6 +1,18 @@
 const prompt = require('prompt-sync')();
-let celsius = parseFloat(prompt("Entrez la température en degrés Celsius :"));
+let n = parseInt(prompt("Entrez un nombre entier positif :"));
+let facteurs = []; 
 
-let etat =  (celsius < 0 ? "Solide": celsius < 100 ? "Liquide" : "Gaz");
+if (n > 0) {
+    
+    for (let i = 1; i <= n; i++) {
+        
+        if (n % i === 0) {
+            facteurs.push(i); 
+        }
+    }
+    console.log(`Les facteurs de ${n} sont : ${facteurs.join(", ")}`);
+    alert(`Les facteurs de ${n} sont : ${facteurs.join(", ")}`);
 
-console.log (` ${celsius} °C, l'eau est à l'état : ${etat}.`);
+} else {
+    console.log("Veuillez entrer un nombre supérieur à 0.");
+}

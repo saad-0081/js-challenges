@@ -1,5 +1,4 @@
 const prompt = require('prompt-sync')();
-
 let nombre = parseInt(prompt("Entrez un nombre à plusieurs chiffres :"));
 let nombreInverse = 0;
 
