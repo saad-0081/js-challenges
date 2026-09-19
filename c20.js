@@ -1,5 +1,5 @@
 const prompt = require('prompt-sync')();
-let nombre = parseInt(prompt("Entrez un nombre pour voir sa table :"));
+let nombre = parseInt(prompt("Entrez un nombre pour  sa table :"));
 
 console.log("Table de multiplication de " + nombre + " (inversée) :");
 
