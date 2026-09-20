@@ -4,12 +4,14 @@ let n = prompt("Combien d'éléments ?");
 let tableau = [];
 
 for (let i = 0; i < n; i++) {
-    tableau.push(Number(prompt("Entrez le nombre " + (i + 1) + " :")));
+    let texte = prompt("Entrez le nombre " + (i + 1) + " :");
+    tableau.push(Number(texte));
 }
 
-let inverse = [];
-for (let i = tableau.length ; i >= 0; i--) {
-    inverse.push(tableau[i]);
+let tableauInverse = [];
+
+for (let i = tableau.length ; i >= 0; i = i - 1) {
+    tableauInverse.push(tableau[i]);
 }
 
-console.log("Tableau inversé : " + inverse);
+console.log("Tableau inversé : " + tableauInverse);
