@@ -1,16 +1,17 @@
 
 let n = prompt("Combien d'éléments ?");
-let original = [];
+let tableau1 = [];
 
 for (let i = 0; i < n; i++) {
-    original.push(Number(prompt("Entrez le nombre " + (i + 1) +":" )));
+    let texte = prompt("Entrez le nombre " + (i + 1) + " :");
+    tableau1.push(Number(texte));
 }
 
-let copie = [];
+let tableau2 = [];
 
-for (let i = 0; i < original.length; i++) {
-    copie.push(original[i]);
+for (let i = 0; i < tableau1.length; i++) {
+    tableau2.push(tableau1[i]);
 }
 
-console.log("Tableau original : " + original);
-console.log("Tableau copié : " + copie);
+console.log("Tableau original : " + tableau1);
+console.log("Tableau copié : " + tableau2);
