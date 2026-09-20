@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const prompt = require('prompt-sync')()
 let n = parseInt(prompt("Entrez le nombre pour la table de multiplication :"));
 
@@ -6,11 +6,11 @@ console.log(`Table de multiplication de ${n} :`);
 
 
 for (let i = 1; i <= 10; i++) {
-let resultat = n * i;
-    console.log(`${n} * ${i} = ${resultat}`);
+let r = n * i;
+    console.log(`${n} * ${i} = ${r}`);
 }
-    
-=======
+
+
 const prompt = require('prompt-sync')();
 let nomber1 = parseInt(prompt("Enter premiere nombre:"));
 let nomber2 = parseInt(prompt("Enter deuxieme nombre:"));
@@ -31,4 +31,4 @@ else if(moyenne>=10 && moyenne<12){
 else {
    console.log(` ${moyenne} La mention recale .`);  
 }
->>>>>>> origin/main
+
