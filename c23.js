@@ -10,11 +10,18 @@
 
 const prompt = require('prompt-sync')();
 let n = prompt("Combien d'éléments ?");
-let somme = 0;
+let tableau = [];
+
 
 for (let i = 0; i < n; i++) {
-    let nombre = Number(prompt("Entrez le nombre " + (i + 1) + " :"));
-    somme = somme + nombre;
+    let mots = prompt("Entrez le nombre " + (i + 1) + " :");
+    let chiffre = Number(mots);
+    tableau.push(chiffre);
 }
 
-console.log("La somme totale est : " + somme)
+let somme = 0;
+for (let i = 0; i < tableau.length; i++) {
+    somme = somme + tableau[i];
+}
+
+console.log("La somme totale est : " + somme);
